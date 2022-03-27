@@ -16,6 +16,8 @@ Install the project with composer
 
 $ composer update // or install
 
+cd depositeapp
+
 Initiate the code with this command, and set it to Development
 
 $ php init

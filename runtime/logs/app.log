@@ -1,0 +1,2351 @@
+2022-03-26 15:21:48 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Connection.php:721
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Connection.php(721): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Connection.php(636): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Connection.php(1066): yii\db\Connection->open()
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Connection.php(1053): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\xampp\htdocs\depositeapp\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Connection.php:647
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Connection.php(1066): yii\db\Connection->open()
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Connection.php(1053): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\xampp\htdocs\depositeapp\yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2022-03-26 15:21:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ITCGLOBAL\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NETADMIN3-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => '/etc/config.site'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'HOME' => 'C:\\Users\\ITCGLOBAL'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ITCGLOBAL'
+    'HOSTNAME' => 'NETADMIN3-PC'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info'
+    'LC_CTYPE' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ITCGLOBAL\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NETADMIN3-PC'
+    'MANPATH' => '/mingw64/local/man:/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => '/mingw64'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => '/mingw64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/c/xampp/htdocs'
+    'OneDrive' => 'C:\\Users\\ITC GLOBAL\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ITC GLOBAL\\OneDrive'
+    'ORIGINAL_PATH' => 'C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\ITCGLOBAL\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7;C:\\Program Files\\PuTTY;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => '/tmp'
+    'ORIGINAL_TMP' => '/tmp'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\ITCGLOBAL\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\ITCGLOBAL\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7;C:\\Program Files\\PuTTY;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POWERSHELL_DISTRIBUTION_CHANNEL' => 'MSI:Windows 10 Pro'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0c'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$TITLEPREFIX:$PWD\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT8HOME' => 'C:\\Program Files\\Cisco Packet Tracer 8.0'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/c/xampp/htdocs/depositeapp'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\Program Files\\Git\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ITCGLO~1\\AppData\\Local\\Temp'
+    'TERM_PROGRAM' => 'mintty'
+    'TERM_PROGRAM_VERSION' => '3.5.0'
+    'TMP' => 'C:\\Users\\ITCGLO~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\ITCGLO~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NETADMIN3-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NETADMIN3-PC'
+    'USERNAME' => 'ITCGLOBAL'
+    'USERPROFILE' => 'C:\\Users\\ITCGLOBAL'
+    'WINDIR' => 'C:\\WINDOWS'
+    'ZES_ENABLE_SYSMAN' => '1'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1648304507.7344
+    'REQUEST_TIME' => 1648304507
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2022-03-26 15:31:44 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][ParseError] ParseError: syntax error, unexpected 'value' (T_STRING), expecting ']' in C:\xampp\htdocs\depositeapp\models\DepositSearch.php:62
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Depo...')
+#1 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(41): spl_autoload_call('app\\models\\Depo...')
+#2 [internal function]: app\controllers\DepositController->actionIndex()
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit', Array)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2022-03-26 15:31:44 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2460'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305104.559
+    'REQUEST_TIME' => 1648305104
+]
+2022-03-26 15:34:19 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][ParseError] ParseError: syntax error, unexpected 'value' (T_STRING), expecting ']' in C:\xampp\htdocs\depositeapp\models\DepositSearch.php:62
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Depo...')
+#1 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(41): spl_autoload_call('app\\models\\Depo...')
+#2 [internal function]: app\controllers\DepositController->actionIndex()
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit', Array)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2022-03-26 15:34:19 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2507'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305259.641
+    'REQUEST_TIME' => 1648305259
+]
+2022-03-26 15:34:25 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][ParseError] ParseError: syntax error, unexpected 'value' (T_STRING), expecting ']' in C:\xampp\htdocs\depositeapp\models\DepositSearch.php:62
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Depo...')
+#1 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(41): spl_autoload_call('app\\models\\Depo...')
+#2 [internal function]: app\controllers\DepositController->actionIndex()
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit', Array)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2022-03-26 15:34:25 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2509'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305265.699
+    'REQUEST_TIME' => 1648305265
+]
+2022-03-26 15:37:54 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][TypeError] TypeError: Argument 2 passed to yii\base\View::{closure}() must be an instance of Deposit, instance of app\models\Deposit given in C:\xampp\htdocs\depositeapp\views\deposit\index.php:37
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(219): call_user_func(Object(Closure), 'view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(245): yii\grid\ActionColumn->createUrl('view', Object(app\models\Deposit), 1, 0)
+#3 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(250): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(app\models\Deposit), 1, 0)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Deposit), 1, 0)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Deposit), 1, 0)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#16 C:\xampp\htdocs\depositeapp\views\deposit\index.php(39): yii\base\Widget::widget(Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\DepositController))
+#21 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(46): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\DepositController->actionIndex()
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#26 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/index', Array)
+#27 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#29 {main}
+2022-03-26 15:37:54 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Fview&deposit_id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2540'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Findex'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Findex'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305474.544
+    'REQUEST_TIME' => 1648305474
+]
+2022-03-26 15:38:35 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][TypeError] TypeError: Argument 2 passed to yii\base\View::{closure}() must be an instance of Deposit, instance of app\models\Deposit given in C:\xampp\htdocs\depositeapp\views\deposit\index.php:37
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(219): call_user_func(Object(Closure), 'view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(245): yii\grid\ActionColumn->createUrl('view', Object(app\models\Deposit), 1, 0)
+#3 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(250): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(app\models\Deposit), 1, 0)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Deposit), 1, 0)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Deposit), 1, 0)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#16 C:\xampp\htdocs\depositeapp\views\deposit\index.php(39): yii\base\Widget::widget(Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\DepositController))
+#21 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(46): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\DepositController->actionIndex()
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#26 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/index', Array)
+#27 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#29 {main}
+2022-03-26 15:38:35 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Fview&deposit_id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2551'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Findex'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Findex'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305515.3
+    'REQUEST_TIME' => 1648305515
+]
+2022-03-26 15:38:46 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][TypeError] TypeError: Argument 2 passed to yii\base\View::{closure}() must be an instance of Deposit, instance of app\models\Deposit given in C:\xampp\htdocs\depositeapp\views\deposit\index.php:37
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(219): call_user_func(Object(Closure), 'view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(245): yii\grid\ActionColumn->createUrl('view', Object(app\models\Deposit), 1, 0)
+#3 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(250): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(app\models\Deposit), 1, 0)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Deposit), 1, 0)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Deposit), 1, 0)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#16 C:\xampp\htdocs\depositeapp\views\deposit\index.php(39): yii\base\Widget::widget(Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\DepositController))
+#21 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(46): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\DepositController->actionIndex()
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#26 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit', Array)
+#27 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#29 {main}
+2022-03-26 15:38:46 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2557'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305526.098
+    'REQUEST_TIME' => 1648305526
+]
+2022-03-26 15:39:34 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][TypeError] TypeError: Argument 2 passed to yii\base\View::{closure}() must be an instance of Deposit, instance of app\models\Deposit given in C:\xampp\htdocs\depositeapp\views\deposit\index.php:37
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(219): call_user_func(Object(Closure), 'view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(245): yii\grid\ActionColumn->createUrl('view', Object(app\models\Deposit), 1, 0)
+#3 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(250): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(app\models\Deposit), 1, 0)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Deposit), 1, 0)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Deposit), 1, 0)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#16 C:\xampp\htdocs\depositeapp\views\deposit\index.php(39): yii\base\Widget::widget(Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\DepositController))
+#21 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(46): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\DepositController->actionIndex()
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#26 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/index', Array)
+#27 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#29 {main}
+2022-03-26 15:39:33 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Fupdate&deposit_id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2564'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Findex'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Findex'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305573.875
+    'REQUEST_TIME' => 1648305573
+]
+2022-03-26 15:39:42 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][TypeError] TypeError: Argument 2 passed to yii\base\View::{closure}() must be an instance of Deposit, instance of app\models\Deposit given in C:\xampp\htdocs\depositeapp\views\deposit\index.php:37
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(219): call_user_func(Object(Closure), 'view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(245): yii\grid\ActionColumn->createUrl('view', Object(app\models\Deposit), 1, 0)
+#3 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(250): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(app\models\Deposit), 1, 0)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Deposit), 1, 0)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Deposit), 1, 0)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#16 C:\xampp\htdocs\depositeapp\views\deposit\index.php(39): yii\base\Widget::widget(Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\DepositController))
+#21 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(46): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\DepositController->actionIndex()
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#26 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit', Array)
+#27 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#29 {main}
+2022-03-26 15:39:41 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2566'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305581.695
+    'REQUEST_TIME' => 1648305581
+]
+2022-03-26 15:39:47 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][TypeError] TypeError: Argument 2 passed to yii\base\View::{closure}() must be an instance of Deposit, instance of app\models\Deposit given in C:\xampp\htdocs\depositeapp\views\deposit\index.php:37
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(219): call_user_func(Object(Closure), 'view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(245): yii\grid\ActionColumn->createUrl('view', Object(app\models\Deposit), 1, 0)
+#3 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(250): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(app\models\Deposit), 1, 0)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Deposit), 1, 0)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Deposit), 1, 0)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#16 C:\xampp\htdocs\depositeapp\views\deposit\index.php(39): yii\base\Widget::widget(Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\DepositController))
+#21 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(46): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\DepositController->actionIndex()
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#26 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit', Array)
+#27 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#29 {main}
+2022-03-26 15:39:47 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2571'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305587.051
+    'REQUEST_TIME' => 1648305587
+]
+2022-03-26 15:39:54 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][TypeError] TypeError: Argument 2 passed to yii\base\View::{closure}() must be an instance of Deposit, instance of app\models\Deposit given in C:\xampp\htdocs\depositeapp\views\deposit\index.php:37
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(219): call_user_func(Object(Closure), 'view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(245): yii\grid\ActionColumn->createUrl('view', Object(app\models\Deposit), 1, 0)
+#3 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(250): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(app\models\Deposit), 1, 0)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Deposit), 1, 0)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Deposit), 1, 0)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#16 C:\xampp\htdocs\depositeapp\views\deposit\index.php(39): yii\base\Widget::widget(Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\DepositController))
+#21 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(46): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\DepositController->actionIndex()
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#26 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit', Array)
+#27 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#29 {main}
+2022-03-26 15:39:53 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2574'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305593.744
+    'REQUEST_TIME' => 1648305593
+]
+2022-03-26 15:40:49 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][TypeError] TypeError: Argument 2 passed to yii\base\View::{closure}() must be an instance of Deposit, instance of app\models\Deposit given in C:\xampp\htdocs\depositeapp\views\deposit\index.php:37
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(219): call_user_func(Object(Closure), 'view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(245): yii\grid\ActionColumn->createUrl('view', Object(app\models\Deposit), 1, 0)
+#3 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(250): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(app\models\Deposit), 1, 0)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Deposit), 1, 0)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Deposit), 1, 0)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#16 C:\xampp\htdocs\depositeapp\views\deposit\index.php(39): yii\base\Widget::widget(Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\DepositController))
+#21 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(46): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\DepositController->actionIndex()
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#26 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/index', Array)
+#27 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#29 {main}
+2022-03-26 15:40:49 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => 'd1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Fview&deposit_id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=d1715d8938f8e3b985709e9577b07437cf690185805e2a800e38544dedc0fb3aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-5nUaYxAhzS9qSrOpaqRmLU4uFpInHS4%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2590'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Findex'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Findex'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648305648.984
+    'REQUEST_TIME' => 1648305648
+]
+2022-03-26 15:57:37 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index". in C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index', Array)
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-03-26 15:57:37 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2759'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=index'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648306657.36
+    'REQUEST_TIME' => 1648306657
+]
+2022-03-26 15:58:29 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][TypeError] TypeError: Argument 2 passed to yii\base\View::{closure}() must be an instance of Deposit, instance of app\models\Deposit given in C:\xampp\htdocs\depositeapp\views\deposit\index.php:37
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(219): call_user_func(Object(Closure), 'view', Object(app\models\Deposit), 1, 0, Object(yii\grid\ActionColumn))
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(245): yii\grid\ActionColumn->createUrl('view', Object(app\models\Deposit), 1, 0)
+#3 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\ActionColumn.php(250): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(app\models\Deposit), 1, 0)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Deposit), 1, 0)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Deposit), 1, 0)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\grid\GridView.php(301): yii\widgets\BaseListView->run()
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#16 C:\xampp\htdocs\depositeapp\views\deposit\index.php(39): yii\base\Widget::widget(Array)
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\DepositController))
+#21 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(46): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\DepositController->actionIndex()
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#25 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#26 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit', Array)
+#27 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#29 {main}
+2022-03-26 15:58:29 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '2769'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648306709.779
+    'REQUEST_TIME' => 1648306709
+]
+2022-03-26 23:55:22 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in C:\xampp\htdocs\depositeapp\views\deposit\_form.php:23
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\views\deposit\_form.php(23): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\depositeapp\views\deposit\create.php(17): yii\base\View->render('_form', Array)
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\DepositController))
+#9 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(81): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\DepositController->actionCreate()
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/create', Array)
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2022-03-26 23:55:22 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '6066'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Fcreate'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Fcreate'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648335322.507
+    'REQUEST_TIME' => 1648335322
+]
+2022-03-26 23:56:20 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in C:\xampp\htdocs\depositeapp\views\deposit\_form.php:23
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\views\deposit\_form.php(23): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\depositeapp\views\deposit\create.php(17): yii\base\View->render('_form', Array)
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\DepositController))
+#9 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(81): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\DepositController->actionCreate()
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/create', Array)
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2022-03-26 23:56:20 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '6068'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Fcreate'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Fcreate'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648335380.499
+    'REQUEST_TIME' => 1648335380
+]
+2022-03-26 23:57:01 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\datepicker\DatePicker::dateFormat in C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set('dateFormat', 'dd/MM/yyyy')
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\datepicker\DatePicker), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('dosamigos\\datep...', Array, Array)
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('dosamigos\\datep...', Array, Array)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(143): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\ActiveField.php(795): yii\base\Widget::widget(Array)
+#8 C:\xampp\htdocs\depositeapp\views\deposit\_form.php(23): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#12 C:\xampp\htdocs\depositeapp\views\deposit\create.php(17): yii\base\View->render('_form', Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#16 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\DepositController))
+#17 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(81): yii\base\Controller->render('create', Array)
+#18 [internal function]: app\controllers\DepositController->actionCreate()
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#22 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/create', Array)
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#25 {main}
+2022-03-26 23:57:00 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '6072'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Fcreate'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Fcreate'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648335420.952
+    'REQUEST_TIME' => 1648335420
+]
+2022-03-26 23:57:46 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\datepicker\DatePicker::dateFormat in C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set('dateFormat', 'php:d-m-Y')
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\datepicker\DatePicker), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('dosamigos\\datep...', Array, Array)
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('dosamigos\\datep...', Array, Array)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(143): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\ActiveField.php(795): yii\base\Widget::widget(Array)
+#8 C:\xampp\htdocs\depositeapp\views\deposit\_form.php(23): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#12 C:\xampp\htdocs\depositeapp\views\deposit\create.php(17): yii\base\View->render('_form', Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#16 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\DepositController))
+#17 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(81): yii\base\Controller->render('create', Array)
+#18 [internal function]: app\controllers\DepositController->actionCreate()
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#22 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/create', Array)
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#25 {main}
+2022-03-26 23:57:46 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '6080'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Fcreate'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Fcreate'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648335466.124
+    'REQUEST_TIME' => 1648335466
+]
+2022-03-27 00:05:37 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Deposit::attributeName in C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('attributeName')
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\helpers\BaseHtml.php(2256): yii\db\BaseActiveRecord->__get('attributeName')
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\helpers\BaseHtml.php(1370): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Deposit), 'attributeName')
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\helpers\BaseHtml.php(1426): yii\helpers\BaseHtml::activeInput('text', Object(app\models\Deposit), 'attributeName', Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\2amigos\yii2-date-picker-widget\src\DatePicker.php(65): yii\helpers\BaseHtml::activeTextInput(Object(app\models\Deposit), 'attributeName', Array)
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): dosamigos\datepicker\DatePicker->run()
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\ActiveField.php(795): yii\base\Widget::widget(Array)
+#7 C:\xampp\htdocs\depositeapp\views\deposit\_form.php(32): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#11 C:\xampp\htdocs\depositeapp\views\deposit\update.php(18): yii\base\View->render('_form', Array)
+#12 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('update', Array, Object(app\controllers\DepositController))
+#16 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(101): yii\base\Controller->render('update', Array)
+#17 [internal function]: app\controllers\DepositController->actionUpdate('9')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('update', Array)
+#21 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/update', Array)
+#22 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#24 {main}
+2022-03-27 00:05:37 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/update'
+    'deposit_id' => '9'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '6142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Fupdate&deposit_id=9'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Fupdate&deposit_id=9'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648335937.528
+    'REQUEST_TIME' => 1648335937
+]
+2022-03-27 00:05:49 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Deposit::attributeName in C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('attributeName')
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\helpers\BaseHtml.php(2256): yii\db\BaseActiveRecord->__get('attributeName')
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\helpers\BaseHtml.php(1370): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Deposit), 'attributeName')
+#3 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\helpers\BaseHtml.php(1426): yii\helpers\BaseHtml::activeInput('text', Object(app\models\Deposit), 'attributeName', Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\2amigos\yii2-date-picker-widget\src\DatePicker.php(65): yii\helpers\BaseHtml::activeTextInput(Object(app\models\Deposit), 'attributeName', Array)
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(146): dosamigos\datepicker\DatePicker->run()
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\ActiveField.php(795): yii\base\Widget::widget(Array)
+#7 C:\xampp\htdocs\depositeapp\views\deposit\_form.php(32): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#11 C:\xampp\htdocs\depositeapp\views\deposit\update.php(18): yii\base\View->render('_form', Array)
+#12 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#15 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('update', Array, Object(app\controllers\DepositController))
+#16 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(101): yii\base\Controller->render('update', Array)
+#17 [internal function]: app\controllers\DepositController->actionUpdate('5')
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('update', Array)
+#21 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/update', Array)
+#22 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#24 {main}
+2022-03-27 00:05:49 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/update'
+    'deposit_id' => '5'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '6146'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Fupdate&deposit_id=5'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Fupdate&deposit_id=5'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648335949.632
+    'REQUEST_TIME' => 1648335949
+]
+2022-03-27 00:42:24 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][Error] Error: Class 'yii\jui\DatePicker' not found in C:\xampp\htdocs\depositeapp\views\deposit\_form.php:21
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#3 C:\xampp\htdocs\depositeapp\views\deposit\create.php(17): yii\base\View->render('_form', Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\DepositController))
+#8 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(81): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\DepositController->actionCreate()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/create', Array)
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2022-03-27 00:42:24 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '8292'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Fcreate'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Fcreate'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648338144.336
+    'REQUEST_TIME' => 1648338144
+]
+2022-03-27 00:56:19 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Deposit::date_deposit in C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('date_deposit')
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\helpers\BaseHtml.php(2256): yii\db\BaseActiveRecord->__get('date_deposit')
+#2 C:\xampp\htdocs\depositeapp\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(132): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Deposit), 'date_deposit')
+#3 C:\xampp\htdocs\depositeapp\vendor\kartik-v\yii2-krajee-base\src\InputWidget.php(111): kartik\base\InputWidget->initInputWidget()
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\BaseObject.php(109): kartik\base\InputWidget->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('kartik\\date\\Dat...', Array, Array)
+#8 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('kartik\\date\\Dat...', Array, Array)
+#9 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Widget.php(143): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\widgets\ActiveField.php(795): yii\base\Widget::widget(Array)
+#11 C:\xampp\htdocs\depositeapp\views\deposit\_form.php(23): yii\widgets\ActiveField->widget('kartik\\date\\Dat...')
+#12 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#15 C:\xampp\htdocs\depositeapp\views\deposit\create.php(17): yii\base\View->render('_form', Array)
+#16 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#18 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#19 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\DepositController))
+#20 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(81): yii\base\Controller->render('create', Array)
+#21 [internal function]: app\controllers\DepositController->actionCreate()
+#22 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#25 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/create', Array)
+#26 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#28 {main}
+2022-03-27 00:56:19 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '8406'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Fcreate'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Fcreate'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648338979.577
+    'REQUEST_TIME' => 1648338979
+]
+2022-03-27 01:13:02 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][Error] Error: Class 'kartikform\ActiveForm' not found in C:\xampp\htdocs\depositeapp\views\deposit\_form.php:16
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#3 C:\xampp\htdocs\depositeapp\views\deposit\create.php(17): yii\base\View->render('_form', Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\DepositController))
+#8 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(81): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\DepositController->actionCreate()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/create', Array)
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2022-03-27 01:13:02 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/depositeapp/web/index.php?r=deposit%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '8532'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Fcreate'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Fcreate'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648339982.104
+    'REQUEST_TIME' => 1648339982
+]
+2022-03-27 01:14:02 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][error][Error] Error: Class 'kartikform\ActiveForm' not found in C:\xampp\htdocs\depositeapp\views\deposit\_form.php:16
+Stack trace:
+#0 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#3 C:\xampp\htdocs\depositeapp\views\deposit\create.php(17): yii\base\View->render('_form', Array)
+#4 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\DepositController))
+#7 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('create', Array, Object(app\controllers\DepositController))
+#8 C:\xampp\htdocs\depositeapp\controllers\DepositController.php(81): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\DepositController->actionCreate()
+#10 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('create', Array)
+#13 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('deposit/create', Array)
+#14 C:\xampp\htdocs\depositeapp\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\depositeapp\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2022-03-27 01:14:02 [::1][-][sc1aumrrsgl6mk33p8ngvqhoir][info][application] $_GET = [
+    'r' => 'deposit/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'jptuoq6d0pjhmqh499a8fo4eeg'
+    'PHPSESSID' => 'sc1aumrrsgl6mk33p8ngvqhoir'
+    '_csrf' => '0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V\";}'
+    'advanced-frontend' => 'iodcc54746lu3fdj791bm51sbi'
+    '_csrf-frontend' => '193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV\";}'
+    '_csrf-backend' => '51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-backend=jptuoq6d0pjhmqh499a8fo4eeg; PHPSESSID=sc1aumrrsgl6mk33p8ngvqhoir; _csrf=0a04e835cf328e0edaa53f6d284050af4efe96eba46221578eb5ab56ae9c6f0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UX2xZPa3YQK7y7voyJBmY3xA1V-mdX5V%22%3B%7D; advanced-frontend=iodcc54746lu3fdj791bm51sbi; _csrf-frontend=193b2acd04657243016c37d6b22ed4ff23c9eab71b98ac66d2257c2cf621cb6da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aoSYNxsB7EFlUjN4KEsEw1VRb260lLmV%22%3B%7D; _csrf-backend=51dc7927a9aaa32f61e894f242b6a9c5c51df8fdf34a323fe9087b65fa470d81a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22idFxzEwkWGCkgkRHMb1wACCyZE_QefAZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\composer;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ITCGLOBAL\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\npm;C:\\Users\\ITCGLOBAL\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/depositeapp/web/index.php'
+    'REMOTE_PORT' => '8535'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deposit%2Fcreate'
+    'REQUEST_URI' => '/depositeapp/web/index.php?r=deposit%2Fcreate'
+    'SCRIPT_NAME' => '/depositeapp/web/index.php'
+    'PHP_SELF' => '/depositeapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1648340042.125
+    'REQUEST_TIME' => 1648340042
+]

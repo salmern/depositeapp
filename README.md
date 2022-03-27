@@ -43,6 +43,7 @@ return [
 -Initiate the database migration, 
 
 $ ./yii migrate
+Apply migrations with console command php yii migrate. This will create tables needed for the application to work
 
 run the project in the browser with this link below 
 http://localhost/depositeapp/web/index.php?r=deposit

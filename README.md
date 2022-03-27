@@ -51,6 +51,8 @@ http://localhost/depositeapp/web/index.php?r=deposit
 Screenshots
 ![deposit](https://user-images.githubusercontent.com/50671163/160287240-a62138c6-8e56-43ff-8dc9-03cd43537729.PNG)
 ![createDeposit](https://user-images.githubusercontent.com/50671163/160287234-40b36804-9df0-4edd-b8e1-3d61b217e00a.PNG)
+![deposittable](https://user-images.githubusercontent.com/50671163/160291267-b22a27f1-4b1c-45eb-bbef-fd7c97593cdf.PNG)
+![tablestructure](https://user-images.githubusercontent.com/50671163/160291270-b00cae32-5cf8-4531-aaa2-dc78e1843705.PNG)
 ![delete](https://user-images.githubusercontent.com/50671163/160287239-49e47d9a-4ce2-4e40-8b38-2dc5663b7f07.PNG)
 ![edit](https://user-images.githubusercontent.com/50671163/160287242-3496feff-4be2-484d-accd-87b0bb182afc.PNG)
 ![resultsearch](https://user-images.githubusercontent.com/50671163/160287244-819dfc19-d206-4e3d-ab35-caf19de734e5.PNG)
